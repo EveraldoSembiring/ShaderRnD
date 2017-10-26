@@ -9,6 +9,6 @@ public class CustomImageEffect : MonoBehaviour {
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         if(EffectMaterial != null)
-            Graphics.Blit(source, EffectMaterial);    
+            Graphics.Blit(source, destination,EffectMaterial);    
     }
 }
